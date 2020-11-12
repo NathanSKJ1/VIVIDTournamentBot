@@ -1,0 +1,11 @@
+{
+    "prefix" : "-",
+    "token" : "Nzc2MTI1MTQ5NDA0ODU2Mzg0.X6wU3w.2iVsAK7qTHMtccgHVrU-4wWgOjM",
+    "bot_age" : 1,
+    "words_array" : ["Hi", "Bye","Yeah"],
+    "bot_info" : {
+        "name " : "Tournament Bot",
+        "version" : 1.0
+    }
+
+}
