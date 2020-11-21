@@ -3,6 +3,8 @@ const fs = require('fs');
 const client = new Discord.Client();
 client.commands= new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const guild = client.guilds.cache.get("761902635111677993");
+
 
 const {
     prefix,
@@ -41,7 +43,7 @@ client.on('message', message => {
         command.execute(message, args);
     }catch(error){
         console.error(error);
-        message.reply('An error with command handling occured!');
+        message.reply('An error with command handling occured!');   
     }
 
 
