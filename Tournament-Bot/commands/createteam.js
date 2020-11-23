@@ -10,7 +10,7 @@ module.exports = {
         //let moderatorRole = message.guild.roles.get('123456789');
         var server = message.guild;
 
-        if(message.member.roles.cache.some(r => r.name === "Mod") || (message.member.roles.cache.some(r => r.name === "Owner"))) {
+        if(message.member.roles.cache.some(r => r.name === "Moderator") || (message.member.roles.cache.some(r => r.name === "Owner"))) {
         //role creation
 
         server.roles.create({
@@ -30,16 +30,15 @@ module.exports = {
 
         
         //channel creation
-
         server.channels.create(args[0]+' text', {
             type: 'text',
             permissionOverwrites: [
                 {
-                  id: '761902635111677993',
+                  id: '778752790834708489',
                   deny: ['VIEW_CHANNEL'],
                },
              ],
-            parent: '779775444794343435',
+            parent: '780423382679289856',
           })
 
         }else{
